@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GSale.ph</title>
+<!-- Fredoka -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<!-- Special Elite -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {background-color: #e6e6e6;}
+.header {
+	background-color: #87BBA2;
+	color: black;
+	font-family: fredoka;
+	font-weight: bold;
+}
+#brand {
+	background-color: #3B6064;
+	font-family: special elite;
+	font-weight: bold;
+}
+li {display: inline;}
+a {color: black;}
+.main-image {
+	height: 400px;
+	background-image: url(https://cdn.mos.cms.futurecdn.net/6973xUBZFtvYeDmTUtuviF-650-80.jpg.webp);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 50px;
+	font-family: special elite;
+	color: white;
+}
+hr {
+	margin: 10px;
+	margin-bottom: 10px;
+	border: 5px solid #000;
+}
+.selling {
+	content: "";
+	clear: both;
+	display: table;
+}
+.featured {
+	float: left;
+	width: 500px;
+	height: 338px;
+	padding: 5px;
+	transition: 0.3s;
+	background-color: white;
+}
+.featured:hover {
+	border: 10px solid #87BBA2;
+}
+.products {
+	float: left;
+	width: 350px;
+	height: 270px;
+	padding: 5px;
+	transition: 0.3s;
+	background-color: white;
+}
+.products:hover {
+	border: 10px solid #87BBA2;
+}
+.details {
+	width: fit-content;
+	text-align: center;
+	font-family: fredoka;
+	padding: 2px 20px;
+}
+
+/*login forms*/
+	.header2 {
+		text-align: center;
+		padding: 10px;
+		background-color: #3B6064;
+		color: #FFF;
+		margin-left: 20%;
+		margin-right: 20%;
+		border-radius: 10px;
+		font-family: special elite;
+	}
+	h3 {
+		text-align: center;
+		padding: 10px;
+		background-color: #3B6064;
+		color: #FFF;
+		margin-left: 1%;
+		margin-right: 1%;
+		border-radius: 10px;
+		font-family: special elite;
+	}
+	.container1 {
+		display: inline-block;
+		max-width: 450px;
+		margin: 50px;
+		margin-left: 250px;
+		padding: 15px;
+		background: #87BBA2;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	.container1 h1 {
+		text-align: center;
+	}
+	.container1 input[type="text"],
+	.container1 input[type="password"],
+	.container1 input[type="file"] {
+		width: 95%;
+		padding: 10px;
+		margin: 10px 0;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		font-family: 'Courier New', Courier, monospace;
+	}
+	.container1 input[type="submit"] {
+		width: 50%;
+		padding: 10px;
+		background: #3B6064;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background 0.5s ease;
+		font-family: fredoka;
+	}
+	.container1 input[type="submit"]:hover {
+		background: #4B7B81;
+	}
+	.container2 {
+		display: inline-block;
+		max-width: 450px;
+		margin: 50px;
+		padding: 15px;
+		background: #87BBA2;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	.container2 h1 {
+		text-align: center;
+	}
+	.container2 input[type="text"],
+	.container2 input[type="password"],
+	.container2 input[type="file"] {
+		width: 95%;
+		padding: 10px;
+		margin: 10px 0;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		font-family: 'Courier New', Courier, monospace;
+	}
+	.container2 input[type="submit"] {
+		width: 50%;
+		padding: 10px;
+		background: #3B6064;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background 0.5s ease;
+		font-family: fredoka;
+	}
+	.container2 input[type="submit"]:hover {
+		background: #4B7B81;
+	}
+	label {
+		color: black;
+		font-family: fredoka;
+		font-size: 18px;
+	}
+
+</style>
+
+<div class="header">
+	<ul>
+		<li style="padding-left: 1vw; padding-right: 1vw; padding-top: 10px" id="brand"><span style="color: white;">GSale</span></a></li>
+		<li style="padding-left: 35vw"><a href="#featured">Bestsellers</a></li>
+		<li style="padding-left: 11vw"><a href="#shop">Shop</a></li>
+		<li style="padding-left: 32vw"><a href="#login">Login | Signup</a></li>
+	</ul>
+</div>
+
+<div class="main-image">
+	<h1 style="padding-top: 110px;">Bluetooth <br /> Speakers</h1>
+</div>
+
+<div class="sale" style="background-color: #589D7C;">
+	<hr /> <hr />
+</div>
+
+<center>
+
+<!-- references: "https://www.techradar.com/news/audio/portable-audio/10-best-portable-speakers-1069079" and "https://digitalwalker.ph/collections/speakers" -->
+
+<div class="selling">
+	<div class="featured" id="featured">
+		<img src="https://cdn.mos.cms.futurecdn.net/tQWzMUEU3LUYaZ5mkpWYKb-1200-80.jpg.webp" width="400" height="270" style="object-fit: scale-down;">
+		<div class="details">
+			<h4>Sonos Roam 2</h4>
+			<p>₱12,910</p>
+		</div>
+	</div>
+	<div class="featured">
+		<img src="https://cdn.mos.cms.futurecdn.net/rgHPEY6Bk2aMYMAci24cPa-1200-80.png.webp" width="400" height="270" style="object-fit: scale-down;">
+		<div class="details">
+			<h4>JBL Clip 5</h4>
+			<p>₱3,515</p>
+		</div>
+	</div>
+	<div class="featured">
+		<img src="https://cdn.mos.cms.futurecdn.net/QAjvnoDArmoqZtTArEBFah-1200-80.jpg.webp" width="400" height="270" style="object-fit: cover;">
+		<div class="details">
+			<h4>JBL Flip 6</h4>
+			<p>₱479</p>
+		</div>
+	</div>
+</div>
+<br />
+
+<!-- products -->
+<div class="selling">
+	<div class="products" id="shop">
+		<img src="https://cdn.mos.cms.futurecdn.net/GCYzZAX6Lm7nYNQFADQHxJ-1200-80.jpg.webp" width="300" height="200" style="object-fit: scale-down;">
+		<div class="details">
+			<h4>Ultimate Ears Everboom</h4>
+			<p>₱15,785</p>
+		</div>
+	</div>
+	<div class="products">
+		<img src="https://cdn.mos.cms.futurecdn.net/xewTN9Ghgg3xwZMNCRwcKW-1200-80.jpg.webp" width="300" height="200" style="object-fit: cover;">
+		<div class="details">
+			<h4>JBL Xtreme 4</h4>
+			<p>₱17,990</p>
+		</div>
+	</div>
+	<div class="products">
+		<img src="https://cdn.mos.cms.futurecdn.net/TsKnqMhpk4KJYBmxpUzvyg-1200-80.jpeg.webp" width="300" height="200" style="object-fit: cover;">
+		<div class="details">
+			<h4>JBL Charge 5</h4>
+			<p>₱5,675</p>
+		</div>
+	</div>
+	<div class="products">
+		<img src="https://cdn.mos.cms.futurecdn.net/zpcbWdeixPCoXSrCpefAxb-1200-80.jpg.webp" width="300" height="200" style="object-fit: scale-down;">
+		<div class="details">
+			<h4>Tribit Stormbox Flow</h4>
+			<p>₱4,995</p>
+		</div>
+	</div> <br />
+	<div class="products">
+		<img src="https://cdn.mos.cms.futurecdn.net/Lj4KzFENVv9bYRFbPhcTgV-1200-80.png.webp" width="300" height="200" style="object-fit: cover;">
+		<div class="details">
+			<h4>Bose SoundLink Max</h4>
+			<p>₱24,900</p>
+		</div>
+	</div>
+	<div class="products">
+		<img src="https://cdn.mos.cms.futurecdn.net/fDpATxJ62XEmUhqXQX2cKD-1200-80.png.webp" width="300" height="200" style="object-fit: scale-down;">
+		<div class="details">
+			<h4>LG XBoom XO2T</h4>
+			<p>₱11,040</p>
+		</div>
+	</div>
+	<div class="products">
+		<img src="https://digitalwalker.ph/cdn/shop/files/05-17-21MarshallKilburn2DWThumb_31080x1080-removebg-preview_499x499.png?v=1692959310" width="300" height="200" style="object-fit: cover;">
+		<div class="details">
+			<h4>Kilburn II Bluetooth Speaker</h4>
+			<p>₱15,990</p>
+		</div>
+	</div>
+	<div class="products">
+		<img src="https://digitalwalker.ph/cdn/shop/products/MOMSPEINTUNERED1_384x384.png?v=1626697213" width="300" height="200" style="object-fit: cover;">
+		<div class="details">
+			<h4>Intune Portable Wireless Speaker</h4>
+			<p>₱3,890</p>
+		</div>
+	</div>
+</div>
+
+</center>
+
+<!-- login/signup -->
+<div class="signup/login" style="padding-top: 30px">
+	<div class="header2" id="login">
+		<h1>Sign Up | Login</h1>
+	</div>
+	<!-- signup -->
+	<div class="container1">
+		<span style="font-size: 20px"> <h3>Sign Up</h3> </span>
+		<form id="loginForm">
+			<center>
+				<br /> <label for="user">Username</label>
+					<input type="text" name="username" placeholder="Create a unique username" required>
+				<label for="passcode">Password</label>
+					<input type="password" id="passwordInput" name="password" placeholder="Create a strong password" required> 
+				<input type="submit" value="Create Account" style="font-size: 15px;">
+			</center>
+		</form>
+	</div>
+	<!-- login -->
+	<div class="container2">
+		<span style="font-size: 20px"> <h3>Log In</h3> </span>
+		<form id="loginForm">
+			<center>
+				<br /> <label for="user">Username</label>
+					<input type="text" name="username" placeholder="Provide your username" required>
+				<label for="passcode">Password</label>
+					<input type="password" id="passwordInput" name="password" placeholder="Provide your password" required>
+				<input type="submit" value="Log In" style="font-size: 15px;">
+			</center>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
